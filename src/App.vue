@@ -2,12 +2,12 @@
   <div class="main-container">
     <div>
       <h1 class="title" :style="{fontWeight: '450'}">9eme GALA de soutien de l'association</h1>
-      <h1 class="title" :style="{fontWeight: '900'}">Mine De Savoir</h1>
+      <h1 class="title" :style="{fontWeight: '900'}">MDS</h1>
     </div>
     <div class="jauge-container">
       <div class="number-container"><h1 class="number">0€</h1></div>
       <div class="jauge-max" :style="{
-          background: `linear-gradient(to right, #F887A2 ${pourcentageJauge}, #FEE1D2 ${pourcentageJauge})`
+          background: `linear-gradient(to right,  #37d540 ${pourcentageJauge}, #FEE1D2 ${pourcentageJauge})`
         }">
         <h1 class="number">{{ totalDon }}€</h1>
       </div>
@@ -62,7 +62,7 @@ html, body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: #f887a16e;
+  background-image: linear-gradient(to bottom right, rgba(130, 242, 105, 0.504), rgba(10, 197, 26, 0.442));
 }
 
 .title {

@@ -52,7 +52,7 @@ export default {
     border-radius: 3px;
     padding: 10px;
     overflow: hidden;
-    background-color: #FEE1D2;
+    background-color: #f3e3dc;
   }
   
   .don {
@@ -69,11 +69,11 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #FEE1D2;
+    background-color: #f3e3dc;
     border-radius: 5px;
     height: 20%;
     widows: 100%;
-    border-top: 3px solid  #f887a1ad;
+    border-top: 3px solid  #37d540;
   }
   
   .nouveau-don input[type="number"] {
@@ -87,19 +87,19 @@ export default {
     -moz-appearance: textfield;
     font-size: 20px;
     text-align: center;
-    background-color: #FEE1D2;
+    background-color: #f3e3dc;
   }
   
   .nouveau-don button {
     height: 100%;
     width: 40%;
-    background-color: #F887A2;
+    background-color: #37d540;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
-    border-top: 3px solid  #f887a1ad;
+    border-top: 3px solid  rgba(130, 242, 105, 0.504);
 
   }
   custom {
