@@ -11,7 +11,7 @@
         }">
         <h1 class="number">{{ totalDon }}€</h1>
       </div>
-      <div class="number-container"><h2 class="number">100 000€</h2></div>
+      <div class="number-container"><h2 class="number">270 000€</h2></div>
     </div>
     <div class="extra-container">
       <HistoriqueDon @don-ajoute="ajouterDon"/>
@@ -30,7 +30,7 @@ export default {
   data() {
     return {
       totalDon: 0,
-      objectifDon: 70000,
+      objectifDon: 270000,
       nouveauDon: '',
       jaugeDon: 0
     };
