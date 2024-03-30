@@ -73,7 +73,7 @@ export default {
     border-radius: 5px;
     height: 20%;
     widows: 100%;
-    border-top: 3px solid  #37d540;
+    border-top: 3px solid  #6F5B3E;
   }
   
   .nouveau-don input[type="number"] {
@@ -93,13 +93,12 @@ export default {
   .nouveau-don button {
     height: 100%;
     width: 40%;
-    background-color: #37d540;
+    background-color: #6F5B3E;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
-    border-top: 3px solid  rgba(130, 242, 105, 0.504);
 
   }
   custom {

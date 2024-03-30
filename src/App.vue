@@ -7,7 +7,7 @@
     <div class="jauge-container">
       <div class="number-container"><h2 class="number">0€</h2></div>
       <div class="jauge-max" :style="{
-          background: `linear-gradient(to right,  #37d540 ${pourcentageJauge}, #FEE1D2 ${pourcentageJauge})`
+          background: `linear-gradient(to right,  #FFF47C ${pourcentageJauge}, #C89E78 ${pourcentageJauge})`
         }">
         <h1 class="number">{{ totalDon }}€</h1>
       </div>
@@ -65,7 +65,7 @@ html, body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-image: linear-gradient(to bottom right, rgba(130, 242, 105, 0.504), rgba(10, 197, 26, 0.442));
+  background-image: linear-gradient(to bottom right, #e7d4c4, #C89E78 );
 }
 
 .title {
