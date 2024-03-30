@@ -51,7 +51,7 @@ export default {
     overflow-y: scroll;
     border-radius: 3px;
     padding: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #f3e3dc;
   }
   

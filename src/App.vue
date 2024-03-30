@@ -1,17 +1,17 @@
 <template>
   <div class="main-container">
     <div>
-      <h1 class="title" :style="{fontWeight: '450'}">9eme GALA de soutien de l'association</h1>
-      <h1 class="title" :style="{fontWeight: '900'}">MDS</h1>
+      <h1 class="title" :style="{fontWeight: '450'}">2eme GALA de soutien de l'association</h1>
+      <h1 class="title" :style="{fontWeight: '900'}">IQRA</h1>
     </div>
     <div class="jauge-container">
-      <div class="number-container"><h1 class="number">0€</h1></div>
+      <div class="number-container"><h2 class="number">0€</h2></div>
       <div class="jauge-max" :style="{
           background: `linear-gradient(to right,  #37d540 ${pourcentageJauge}, #FEE1D2 ${pourcentageJauge})`
         }">
         <h1 class="number">{{ totalDon }}€</h1>
       </div>
-      <div class="number-container"><h1 class="number">70 000€</h1></div>
+      <div class="number-container"><h2 class="number">100 000€</h2></div>
     </div>
     <div class="extra-container">
       <HistoriqueDon @don-ajoute="ajouterDon"/>
@@ -31,20 +31,23 @@ export default {
     return {
       totalDon: 0,
       objectifDon: 70000,
-      nouveauDon: ''
+      nouveauDon: '',
+      jaugeDon: 0
     };
   },
   methods: {
     ajouterDon(montant) {
       this.totalDon += montant;
-      if (this.totalDon >= this.objectifDon) {
-        this.totalDon = this.objectifDon;
+      if (this.totalDon > this.objectifDon) {
+        this.jaugeDon = this.objectifDon;
+      } else {
+        this.jaugeDon = this.totalDon;
       }
-    },
+    }
   },
   computed: {
     pourcentageJauge() {
-      return (this.totalDon / this.objectifDon) * 100 + '%';
+      return (this.jaugeDon / this.objectifDon) * 100 + '%';
     }
   }
 };
